@@ -28,6 +28,10 @@ ul {
   padding: 0;
 }
 
+.sidebar ul {
+  padding-bottom: 15px;
+}
+
 .sidebar h2 {
   color: #787d87;
   font-size: 15px;
@@ -95,10 +99,7 @@ ul {
   margin-right: 10px;
 }
 
-.list-main,
-.list-admin,
-.cap,
-.list1 {
+.uppercase {
   text-transform: uppercase;
 }
 
@@ -134,15 +135,13 @@ ul {
 /*MAIN PAGE*/
 
 .content {
-/*  display: grid;
-  grid-template-columns: ;
-  grid-template-rows: 60px 100px 60px 200px;*/
   margin-left: 220px;
+  display: grid;
+  grid-template-rows: 50px 120px 50px 200px 50px auto;
 }
 
 header {
   border-color: #E5E7EA;
-  border: solid;
   display: grid;
   grid-template-columns: 60px auto 50px 50px 50px;
   grid-template-rows: 50px;
@@ -150,6 +149,7 @@ header {
 
 .header-search {
   display: flex;
+  height: 50px;
 }
 
 .header-links {
@@ -174,15 +174,35 @@ header a:hover {
 
 .header-input {
   border: 0;
-  font-size: 14px;
+  font-size: 18px;
   height: 40px;
   margin-top: -12px;
+  outline: none;
   padding-left: 10px;
   width: 100%;
 }
 
+.job-div {
+  padding: 20px 40px;
+}
+
 h1 {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #4E515D;
+}
+
+.job-desc-span {
+  color: #8C95A3;
+}
+
+.job-div a:link,
+.job-div a:visited {
+  color: #45A4F3;
+}
+
+.map-icon {
+  padding-right: 8px;
 }
 
 .job-desc {
@@ -190,11 +210,57 @@ h1 {
 }
 
 .file-links {
-  display: flex;
   align-self: center;
-  margin-left: auto;
+  display: flex;
+  margin: 27px;
+}
+
+.file-links-button,
+.file-links-open {
+  border-radius: 20px;
+  border: #9CA3AE solid 2px;
+  height: 40px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.open-text {
+  bottom: 5px;
+  position: relative;
+}
+
+.file-links-button .fas {
+  bottom: 5px;
+  position: relative;
+  right: 3px;
+}
+
+.file-links-button {
+  width: 40px;
+}
+
+.file-links a:link,
+.file-links a:visited {
+  color: #7d8593;
+}
+
+.file-links a:hover {
+  color: #70972f;
 }
 
 .list1 ul {
   display: flex;
+}
+
+.bottom-cards {
+  display: flex;
+}
+
+.left-card {
+  width: 60%;
+}
+
+.right-card {
+  width: 30%;
+  margin-left: auto;
 }
