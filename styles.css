@@ -142,7 +142,7 @@ ul {
 .content {
   margin-left: 220px;
   display: grid;
-  grid-template-rows: 50px 120px 50px 200px 50px auto;
+  grid-template-rows: 50px 150px 50px 250px 50px auto;
 }
 
 header {
@@ -281,6 +281,21 @@ h1 {
   background-color: #EDF1F5;
 }
 
+.chart-area {
+  display: flex;
+}
+
+.chart-area img {
+  width: 100%;
+  padding: 20px;
+}
+
+.chart-area p {
+  font-size: 12px;
+  color: #5B6677;
+  background-color: #fff;
+}
+
 .bottom-cards {
   display: flex;
 }
@@ -320,12 +335,14 @@ table {
 }
 
 .table-desc {
+  color: #7B899E;
   font-size: 12px;
   padding: 15px 0px;
   width: 50px;
 }
 
 .table-info {
+  color: #667080;
   font-size: 14px;
   align-content: center;
 }
@@ -339,4 +356,65 @@ table {
 .right-card {
   width: 33%;
   margin-left: auto;
+}
+
+.fab {
+  padding: 15px;
+}
+
+.facebook {
+  background-color: #5071BC;
+  border-radius: 5px;
+}
+
+.facebook a:link,
+.facebook a:visited {
+  color: #fff;
+}
+
+.twitter {
+  background-color: #45A8E9;
+  border-radius: 5px;
+}
+
+.twitter a:link,
+.twitter a:visited {
+  color: #fff;
+}
+
+.linkedin {
+  background-color: #3380B7;
+  border-radius: 5px;
+}
+
+.linkedin a:link,
+.linkedin a:visited {
+  color: #fff;
+}
+
+.right-card h3 {
+  color: #5B6677;
+}
+
+.rc-icon {
+  color: #717A89;
+}
+
+.right-card input {
+  border-radius: 5px;
+}
+
+.right-card button {
+  color: #fff;
+  background-color: #66B8BF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+  }
 }
