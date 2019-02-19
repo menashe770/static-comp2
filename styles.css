@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /*SIDEBAR*/
 
 .sidebar {
@@ -67,6 +71,7 @@ ul {
 
 .user-name {
   padding-top: 15px;
+  font-weight: 400;
 }
 
 .user-name a:hover {
@@ -248,8 +253,32 @@ h1 {
   color: #70972f;
 }
 
+.list1 {
+  margin-left: 25px;
+}
+
 .list1 ul {
   display: flex;
+}
+
+.list1 a {
+  font-size: 14px;
+  padding: 15px 15px 20px 15px;
+}
+
+.list1 a:link,
+.list1 a:visited {
+  color: #8C95A3
+}
+
+.list1 a:hover {
+  color: #000;
+  border-bottom: 3px #45A4F3 solid;
+  padding-bottom: 17px;
+}
+
+.gray-bg {
+  background-color: #EDF1F5;
 }
 
 .bottom-cards {
@@ -257,10 +286,57 @@ h1 {
 }
 
 .left-card {
-  width: 60%;
+  width: 66%;
+}
+
+table {
+  background-color: #fff;
+  table-layout: auto;
+  width: 100%;
+}
+
+.table-top {
+  background-color: #717D93;
+  color: #fff;
+}
+
+.table-heading {
+  padding: 15px;
+  font-size: 13px;
+}
+
+.table-edit {
+  padding: 15px;
+  font-size: 12px;
+}
+
+.table-edit a:link,
+.table-edit a:visited {
+  color: #fff;
+}
+
+.table-edit a:hover {
+  background-color: #7E8BA4;
+}
+
+.table-desc {
+  font-size: 12px;
+  padding: 15px 0px;
+  width: 50px;
+}
+
+.table-info {
+  font-size: 14px;
+  align-content: center;
+}
+
+.man-pic {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 10px;
 }
 
 .right-card {
-  width: 30%;
+  width: 33%;
   margin-left: auto;
 }
