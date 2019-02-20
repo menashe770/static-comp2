@@ -20,7 +20,7 @@
   overflow: auto;
   padding: 0;
   position: fixed;
-  width: 220px;
+  width: 200px;
 }
 
 .sidebar img {
@@ -140,9 +140,9 @@ ul {
 /*MAIN PAGE*/
 
 .content {
-  margin-left: 220px;
+  margin-left: 200px;
   display: grid;
-  grid-template-rows: 50px 150px 50px 250px 50px auto;
+  grid-template-rows: 50px auto;
 }
 
 header {
@@ -277,8 +277,9 @@ h1 {
   padding-bottom: 17px;
 }
 
-.gray-bg {
+.bottom-half {
   background-color: #EDF1F5;
+  padding: 20px;
 }
 
 .chart-area {
@@ -291,9 +292,12 @@ h1 {
 }
 
 .chart-area p {
-  font-size: 12px;
-  color: #5B6677;
   background-color: #fff;
+  border-radius: 20px;
+  color: #5B6677;
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .bottom-cards {
@@ -307,7 +311,7 @@ h1 {
 table {
   background-color: #fff;
   table-layout: auto;
-  width: 100%;
+  margin: 20px;
 }
 
 .table-top {
@@ -355,7 +359,7 @@ table {
 
 .right-card {
   width: 33%;
-  margin-left: auto;
+  margin: 20px 0 0 10px;
 }
 
 .fab {
@@ -365,6 +369,8 @@ table {
 .facebook {
   background-color: #5071BC;
   border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .facebook a:link,
@@ -372,9 +378,17 @@ table {
   color: #fff;
 }
 
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover {
+  background-color: #29385a;
+}
+
 .twitter {
   background-color: #45A8E9;
   border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .twitter a:link,
@@ -385,6 +399,8 @@ table {
 .linkedin {
   background-color: #3380B7;
   border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .linkedin a:link,
@@ -394,19 +410,36 @@ table {
 
 .right-card h3 {
   color: #5B6677;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 .rc-icon {
   color: #717A89;
 }
 
+.rc-p {
+  font-size: 13px;
+  padding-bottom: 15px;
+}
+
 .right-card input {
   border-radius: 5px;
+  margin-bottom: 20px;
+  border: solid lightgray 2px;
+  padding: 7px;
 }
 
 .right-card button {
   color: #fff;
   background-color: #66B8BF;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100px;
+}
+
+.right-card button:hover {
+  background-color: #4b8a90;
 }
 
 @media only screen and (max-width: 1000px) {
